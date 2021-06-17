@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MemberAddActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        >
+
+    <TextView
+        android:id="@+id/add_btnBack"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="취소"
+        android:textColor="#2e4bf2"
+        />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:text="연락처 추가"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/add_btnSave"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="저장"
+            android:gravity="right"
+            android:enabled="false"
+            android:textColor="#ced4da"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/add_btnImage"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/useradd"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/add_eName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="이름 입력"
+        />
+
+    <TextView
+        android:id="@+id/add_nameCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 / 20"
+        android:layout_gravity="right"
+        android:layout_marginRight="12dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="번호"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/add_eNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="전화번호 입력"
+        android:inputType="phone"
+        />
+
+    <TextView
+        android:id="@+id/add_numberCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 / 11"
+        android:layout_gravity="right"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="메모"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <EditText
+        android:id="@+id/add_eComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="메모 입력"
+        />
+
+    <TextView
+        android:id="@+id/add_commentCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 / 50"
+        android:layout_gravity="right"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="그룹"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/add_eCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:editable="false"
+        android:hint="그룹 미지정"
+        />
+
+</LinearLayout>

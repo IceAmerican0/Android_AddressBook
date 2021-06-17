@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="group">
+        <item>그룹 미지정</item>
+        <item>즐겨찾기</item>
+        <item>가족</item>
+        <item>친구</item>
+        <item>직장</item>
+    </string-array>
+</resources>
