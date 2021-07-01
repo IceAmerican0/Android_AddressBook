@@ -168,7 +168,7 @@ public class MemberAddActivity extends AppCompatActivity {
                     finish();
                     break;
                 case R.id.add_btnSave: //저장하기
-//                    imageUpload();
+                    imageUpload();
                     AddAction();
                     break;
                 case R.id.add_eCategory: //그룹정하기
@@ -288,7 +288,7 @@ public class MemberAddActivity extends AppCompatActivity {
                 img.setImageBitmap(image_bitmap_copy);
 
                 // 파일 이름 및 경로 바꾸기(임시 저장, 경로는 임의로 지정 가능)
-                String date = new SimpleDateFormat("yyyyMMddHmsS").format(new Date());
+                String date = new SimpleDateFormat("yyyyMMddHm").format(new Date());
                 imageName = date + "." + f_ext;
                 tempSelectFile = new File(devicePath , imageName);
                 OutputStream out = new FileOutputStream(tempSelectFile);
